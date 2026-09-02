@@ -5,18 +5,15 @@ RaceDay is a race management system designed to manage race events, organisers, 
 
 ## Roles
 ### Organiser
-
 Organisers are responsible for managing race events. They can create and manage events, manage categories, view participant entries, and manage race results.
 
 ### Participant
-
 Participants can register and log in to the system, manage their profiles, view available events and categories, enter events, and view their results.
 
 ## CI/CD
-
 The GitHub Actions workflow checks that the required Part 1 files are present in the `/docs` folder and that the repository structure meets the project requirements.
 
-**Successful CI/CD Build:**
+**Successful CI/CD Build :**
 Screen Shot 2026-09-02 at 14.43.11<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ca5d6b9d-9b28-4e9c-948d-3ffdc54c3100" />
 ## YouTube Video
 https://youtu.be/IEgsDFZAsIM

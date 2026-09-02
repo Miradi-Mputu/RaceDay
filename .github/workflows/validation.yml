@@ -1,1 +1,23 @@
+name: RaceDay Part 1 Validation
 
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate-project:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required files
+        run: |
+          test -d docs
+          test -f docs/ERD.png
+          test -f docs/API-Endpoint-Plan.pdf
+          test -f docs/RaceDay.sql
+          test -f README.md
+
+          echo "RaceDay Part 1 validation successful!"

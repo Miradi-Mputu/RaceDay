@@ -1,23 +1,20 @@
 name: RaceDay Part 1 Validation
-
 on:
   push:
   pull_request:
-
 jobs:
   validate-project:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Check required files
         run: |
-          test -d docs
-          test -f docs/ERD.png
-          test -f docs/API-Endpoint-Plan.pdf
-          test -f docs/RaceDay.sql
+          DIR="PROG6212.POE.P1[MM-ST10465112]"
+          test -d "$DIR"
+          test -f "$DIR/prog.ERD.pdf"
+          test -f "$DIR/RaceDay.API-EndPoint-Plan.SectionB.docx"
+          test -f "$DIR/prog6212.poe,p1.sql"
+          test -f "$DIR/PROG6212.Part1.drawio.png"
           test -f README.md
-
           echo "RaceDay Part 1 validation successful!"
